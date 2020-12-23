@@ -1263,7 +1263,7 @@ button:focus {
 @media only screen and (max-width: 580px) {
   .footer {
     padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 8.5rem;
   }
 }
 
@@ -2529,4 +2529,7 @@ button:focus {
 .filter__item{
   display: inline-flex;
   margin-right: 10px;
+}
+.icon-social{
+  width: 2.7rem;
 }
