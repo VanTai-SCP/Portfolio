@@ -1285,6 +1285,37 @@ button:focus {
 .case-item > * {
   min-width: 0;
 }
+.case-item:hover{
+  transform: translateY(-10px);
+  transition: all 300ms ease-in-out;
+    box-shadow: 0 0.1rem 2rem 0 rgba(0, 0, 0, 0.05);
+
+}
+
+/* .case-item:before{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background:linear-gradient(45deg,#fb0094 , #0000ff ,#00ff00, #ffff00 , #ff0000,#fb0094 , #0000ff ,#00ff00, #ffff00 , #ff0000);
+  width: calc(100% + 4px);
+  height:  calc(100% + 4px);
+  background-size: 400%;
+  z-index: -1;
+  animation: animate 20s linear infinite;
+} */
+
+@keyframes animate {
+  0%{
+    background-position: 0 0;
+  }
+  50%{
+    background-position: 400% 0;
+  }
+  100%{
+    background-position: 0 0;
+  }
+}
 @media only screen and (max-width: 991px) {
   .case-item {
     height: calc(100% - 20px);
@@ -1546,6 +1577,11 @@ button:focus {
     color: rgba(94, 110, 128, 0.8);
   }
   .filter__item.active a {
+    background-image: linear-gradient(142.17deg, #ff5630 6.66%, #8939b7 91.48%);
+    border-radius: 10px;
+    color: #fff;
+  }
+  .filter__item a:hover{
     background-image: linear-gradient(142.17deg, #ff5630 6.66%, #8939b7 91.48%);
     border-radius: 10px;
     color: #fff;
@@ -2477,7 +2513,7 @@ button:focus {
 
 .js-parallax-img {
   position: relative;
-  z-index: 0;
+  /* z-index: 0; */
 }
 .js-parallax-img .jarallax-img {
   object-fit: cover;
@@ -2521,6 +2557,7 @@ button:focus {
   background-image: linear-gradient(142.17deg, #ff5630 6.66%, #8939b7 91.48%);
   color: white;
   transition: all 500ms ease-in-out;
+  /* left: 10px; */
 }
 .img-content{
   width: 1.5rem;
@@ -2529,4 +2566,28 @@ button:focus {
 .filter__item{
   display: inline-flex;
   margin-right: 10px;
+}
+.shadow:before{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background:linear-gradient(45deg,#fb0094 , #0000ff ,#00ff00, #ffff00 , #ff0000,#fb0094 , #0000ff ,#00ff00, #ffff00 , #ff0000);
+  width: calc(100% + 4px);
+  height:  calc(100% + 4px);
+  background-size: 400%;
+  z-index: -1;
+  animation: animate 20s linear infinite;
+  border-radius: 23px;
+}
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+      background-position: 400% 0;
+  }
+  100%{
+      background-position: 0 0;
+  }
 }
