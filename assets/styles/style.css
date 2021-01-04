@@ -1288,7 +1288,8 @@ button:focus {
 .case-item:hover{
   transform: translateY(-10px);
   transition: all 300ms ease-in-out;
-    box-shadow: 0 0.1rem 2rem 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0.1rem 2rem 0 rgba(58, 58, 57, 0.5);
+    border: 1px solid rgb(214, 98, 31);
 
 }
 
@@ -2513,7 +2514,7 @@ button:focus {
 
 .js-parallax-img {
   position: relative;
-  /* z-index: 0; */
+ 
 }
 .js-parallax-img .jarallax-img {
   object-fit: cover;
